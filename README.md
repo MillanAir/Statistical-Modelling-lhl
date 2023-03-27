@@ -1,28 +1,28 @@
 # Final-Project-Statistical-Modelling-with-Python
 
 ## Project/Goals
-Using the CityBikes API, Foursquare API, and Yelp API, we will be exploring the relationship between the number of bikes in a particular location and the characteristics of the POIs in that location.
+Using the CityBikes API, Foursquare API, and Yelp API, we will be exploring the relationship between the number of bikes in a particular location and the ratings of the POIs in that location.
 
 ## Process
 
 ### Getting the Data
 
-1. We first explored the structure of the API, queried the API, and understood the data returned.
-2. We chose a city covered by the CityBikes API and retrieved all available bike stations in that city along with available bikes, latitude, and longitude.
-3. Using the Foursquare and Yelp API, we retrieved information for the following in that location:
-    - Restaurants or bars
-    - Various POIs (points of interest) of your choice
-4. After cleaning the data, we created a DataFrame for the Yelp results and Foursquare results.
-5. Saved the data in csv format and sqlite3 database so as to ensure that we can access the data in the future and reducing the number of api calls.
+The API structure was examined, and the data it returned was analyzed. Then, we picked a city from the CityBikes API and collected data on all bike stations, including their available bikes, latitude, and longitude. 
+Foursquare and Yelp APIs was used to obtain information on restaurants or bars and various points of interest in that area. 
+The data was then cleaned, and separate DataFrames were created for the Yelp and Foursquare results.
+Finally, the data was saved in both csv format and an sqlite3 database to allow future access and minimize the number of API calls needed.
 
 
 ### Joing the Data and Building a Model
-1. We joined the data from Part 1 with the data from Part 2 to create a new dataframe.
-2. We used data visualization to explore the data.
-3. We built a regression model using Python’s `statsmodels` module that demonstrates a relationship between the number of bikes in a particular location and the characteristics of the POIs in that location.
+
+The data from Part 1 and Part 2 were merged to generate a new dataframe. 
+
+Data visualization was utilized to investigate the data, and a regression model was constructed with Python's `statsmodels` module to show the connection between the quantity of bikes in a given location and the features of the points of interest (POIs) in that area.
+
 
 ## Results
-We found that there is a loosely positive relationship between the number of bikes in a particular location and the characteristics of the POIs in that location.
+
+There is moderate to strong positive relationship between the number of bikes and the ratings of the POIs in that location.
 
 ## Challenges 
 
@@ -31,7 +31,8 @@ We found that there is a loosely positive relationship between the number of bik
 
 ## Future Goals
 
-1. We would like to explore the relationship between the number of bikes in a particular location and the characteristics of the POIs in that location in more detail. For eg. 
+We would like to explore the relationship between the number of bikes in a particular location and the characteristics of the POIs in that location in more detail. For eg. 
+
    - What kind of POIs are more likely to have more bikes?
    - What POIs have less bikes?
    - POI's with more bikes are more likely to have more reviews?
